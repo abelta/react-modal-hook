@@ -54,6 +54,7 @@ export const useModal = (
   const hideModal = useCallback(() => setShown(false), []);
 
   useEffect(() => {
+    console.log('USE EFFECT');
     if (isShown) {
       context.showModal(key, modal);
     } else {
